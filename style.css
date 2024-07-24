@@ -1,0 +1,192 @@
+/* ------------------------------------FIRST PAGE------------------------------------------ */
+
+@keyframes fade-in {
+  0% {opacity: 0;}
+  100% {opacity: 1;}
+}
+
+body{
+  margin: 0;
+  padding: 0;
+  animation: fade-in 2s;
+  background-color: #191919;
+  transition: background-color 1s ease;
+}
+.first-page {
+  background-image: url(Asset/Home.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  position: relative;
+}
+.mempelai-name{
+  bottom: 13%;
+  left: 5%;
+  position: absolute;
+}
+.mempelai-name h1{
+  color: white;
+  margin: 0;
+  font-size: 700%;
+}
+.tanggal {
+  padding-left: 5%;
+  position: absolute;
+  bottom: 5%;
+  left: 3%;
+}
+.tanggal h2{
+  color: white;
+  font-size: 170%;
+}
+
+/* ----------------------------------SECOND PAGE------------------------------------------ */
+
+.second-page{
+  height: 100vh;
+  background-image: url(Asset/wedhall2.jpg);
+  background-position: center;
+  height: 100vh;
+  transition: background-image ease 1s;
+}
+.btn {
+  width: fit-content;                                                                                                
+  height: 15%;
+  border-radius: 25px;
+  display: table;
+  margin: 0 auto;
+  padding-top: 10%;
+  text-align: center;
+  line-height: 100%;
+  cursor: pointer;
+}
+.btn span {
+  /* width: fit-content; */
+  height: fit-content;
+  font-size: 100px;
+  /* display:block;
+  float:left; */
+  margin:50%;
+}
+.btn span.dark-mode-icon::after {
+  content: "🌑";
+  display:block;
+  float:left;
+  margin:10px 10px 0 0;
+  padding:5px 10px
+}
+.btn span.dark-mode-icon.dark::after {
+  content: "☀️";
+  display:block;
+  float:left;
+  margin:10px 10px 0 0;
+  padding:5px 10px
+}
+.dark {
+  color: #191919;
+  background-image: url(Asset/wedhall1.jpg);
+  transition: background-image 1s ease;
+  background-position: center;
+  background-size: cover;
+}
+.dark2{
+  background-color: white;
+}
+.dark3{
+  background-color: #D4BDAD;
+}
+.main {
+  width: 100%;
+  height: fit-content;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin-top: 10vh;
+}
+.main h1.dark-mode-text::after{
+  content: "Pernikahan"; 
+}
+.main h1.dark-mode-text.dark2::after{
+  content: "Pemberkatan";
+}
+.main h2{
+  font-size: 200%;
+}
+.countdown h1{
+  font-size: 350%;
+  color: #D4BDAD;
+}
+/* -------------------------------------PAGE THREE------------------------------------------- */
+.third-page{
+  height: 100vh;
+  background-image: url(Asset/Light\ Brown\ Organic\ Warm\ Wedding\ Event\ Website.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.text{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.text h1{
+  color: white;
+  font-size: 350%;
+}
+/* -------------------------------------RESPONSIVE------------------------------------------- */
+@media only screen and (max-width: 992px) {
+  .mempelai-name h1{
+    font-size: 500%;
+  }
+  .tanggal h2{
+    font-size: 180%;
+  }
+  .countdown h1{
+    font-size: 300%;
+  }
+  .text h1{
+    font-size: 300%;
+  }
+  .main h2{
+    font-size: 150%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .mempelai-name h1{
+    font-size: 500%;
+  }
+  .tanggal h2{
+    font-size: 170%;
+  }
+  .countdown h1{
+    font-size: 250%;
+  }
+  .text h1{
+    font-size: 250%;
+  }
+  .main h2{
+    font-size: 100%;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .mempelai-name h1{
+    font-size: 350%;
+  }
+  .tanggal h2{
+    font-size: 150%;
+  }
+  .countdown h1{
+    font-size: 190%;
+  }
+  .text h1{
+    font-size: 190%;
+  }
+  .main h2{
+    font-size: 80%;
+  }
+}
